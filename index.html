@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Gallardo - Tantra Instruction</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-purple-50 min-h-screen">
+  <header class="bg-white shadow-sm">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-semibold text-purple-800">Dr. Gallardo</h1>
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="text-purple-600 hover:text-purple-800">About</a>
+        <a href="#services" class="text-purple-600 hover:text-purple-800">Services</a>
+        <a href="#testimonials" class="text-purple-600 hover:text-purple-800">Testimonials</a>
+        <a href="#contact" class="text-purple-600 hover:text-purple-800">Contact</a>
+      </div>
+      <button onclick="toggleMenu()" id="menuButton" class="md:hidden">
+        <svg id="menuIcon" class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden bg-white px-4 py-2">
+      <a href="#about" class="block py-2 text-purple-600 hover:text-purple-800">About</a>
+      <a href="#services" class="block py-2 text-purple-600 hover:text-purple-800">Services</a>
+      <a href="#testimonials" class="block py-2 text-purple-600 hover:text-purple-800">Testimonials</a>
+      <a href="#contact" class="block py-2 text-purple-600 hover:text-purple-800">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-purple-100 py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-purple-800 mb-4">Discover the Art of Tantra</h2>
+        <p class="text-xl text-purple-600 mb-8">Embark on a journey of self-discovery and spiritual connection with Dr. Gallardo</p>
+        <a href="#contact" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition duration-300">Book a Session</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-purple-800 mb-8 text-center">About Dr. Gallardo</h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <img src="/placeholder.svg?height=400&width=400" alt="Dr. Gallardo" class="rounded-full mx-auto" width="300" height="300" />
+          </div>
+          <div class="md:w-1/2">
+            <p class="text-purple-700 mb-4">
+              Dr. Gallardo is a renowned tantra instructor with over 15 years of experience, combining traditional tantric practices with modern therapeutic techniques.
+            </p>
+            <p class="text-purple-700">With a Ph.D. in Psychology and training in various Eastern spiritual practices, Dr. Gallardo offers a unique, holistic approach to tantra.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-purple-100 py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-purple-800 mb-8 text-center">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-purple-700 mb-4">Individual Sessions</h3>
+            <p class="text-purple-600">One-on-one tantra coaching tailored to your personal journey.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-purple-700 mb-4">Couples Workshops</h3>
+            <p class="text-purple-600">Learn to deepen your connection and intimacy as a couple.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-purple-700 mb-4">Group Retreats</h3>
+            <p class="text-purple-600">Immersive experiences to explore tantra in a supportive group setting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-purple-800 mb-8 text-center">Testimonials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-purple-100 p-6 rounded-lg">
+            <p class="text-purple-700 mb-4">"Dr. Gallardo's sessions have transformed my relationship with myself and my partner. I've never felt more connected and alive."</p>
+            <p class="text-purple-600 font-semibold">- Sarah M.</p>
+          </div>
+          <div class="bg-purple-100 p-6 rounded-lg">
+            <p class="text-purple-700 mb-4">"The couples workshop was eye-opening. We learned techniques that have brought a new level of intimacy to our marriage."</p>
+            <p class="text-purple-600 font-semibold">- John D.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-purple-100 py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-semibold text-purple-800 mb-8 text-center">Contact Dr. Gallardo</h2>
+        <form class="max-w-lg mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block text-purple-700 mb-2">Name</label>
+            <input type="text" id="name" class="w-full px-3 py-2 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-purple-700 mb-2">Email</label>
+            <input type="email" id="email" class="w-full px-3 py-2 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-purple-700 mb-2">Message</label>
+            <textarea id="message" rows="4" class="w-full px-3 py-2 border border-purple-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" required></textarea>
+          </div>
+          <button type="submit" class="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition duration-300">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-purple-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2023 Dr. Gallardo Tantra Instruction. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      const icon = document.getElementById("menuIcon");
+      menu.classList.toggle("hidden");
+      icon.innerHTML = menu.classList.contains("hidden") ? 
+        '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>' : 
+        '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+    }
+  </script>
+</body>
+</html>
